@@ -1,0 +1,78 @@
+.vending-machine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.vending-header {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #dcdcdc;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.vending-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjusted to 3 columns for 9 items */
+    grid-gap: 10px;
+    width: 60%; /* Adjust this based on the total width you desire */
+}
+
+.vending-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden; /* Prevents overflow of content */
+}
+
+.vending-image {
+    width: 100%; /* Full width of the slot */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 120px; /* Maximum height to keep images uniform */
+    object-fit: contain; /* Ensures the image fits well without distortion */
+}
+
+.vending-code {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.code-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.code-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #cacaca;
+}
+
+.entered-code-display {
+    margin-top: 10px;
+}

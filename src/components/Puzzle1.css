@@ -1,0 +1,40 @@
+.puzzle {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.puzzle-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.puzzle-question {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.puzzle-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+.puzzle-button {
+    background-color: #3f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.feedback {
+    font-size: 16px;
+    margin-top: 10px;
+}

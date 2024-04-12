@@ -1,0 +1,81 @@
+.puzzle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.computer-screen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Align buttons in rows of 3 */
+    gap: 10px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.keypad-button {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.code-display {
+    margin: 20px;
+    font-size: 24px;
+    color: #FFF;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.code-display.static-code {
+    color: grey; /* Styling for the static blurred correct code */
+}
+
+.blurred-digits {
+    filter: blur(5px); /* Apply blur effect to the last two digits */
+}
+
+.feedback {
+    color: #FFF;
+    margin: 10px;
+    font-size: 16px;
+    height: 22px; /* Fixed height for feedback to avoid layout shift */
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.reset-button {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.clue-image img {
+    height: 400px;
+    margin-top: 20px;
+}
